@@ -7,8 +7,6 @@ from tkinter import filedialog
 import os
 import keys
 
-# id3 tag editing - option
-
 client_id = keys.client_id
 client_secret = keys.client_secret
 
@@ -97,7 +95,7 @@ def download_mp3(spotlink):
         os.rename(out_file, new_file)
 
         msg.config(foreground='lightblue')
-        msg_var.set("Song successfully downloaded!")
+        msg_var.set(f"{track_name} by {artist_name} successfully downloaded!")
 
     else:
         msg.config(foreground='red')
