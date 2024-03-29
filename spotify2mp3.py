@@ -8,9 +8,6 @@ import keys
 
 client_id = keys.client_id
 client_secret = keys.client_secret
-# 111
-# Test comment
-# heeel
 
 client_credentials_manager = SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
